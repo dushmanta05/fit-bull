@@ -6,13 +6,9 @@ function SearchExercises() {
 
   const [search, setSearch] = useState('')
 
-function handleChange(event){
-  setSearch(event.target.value.toLowerCase()
-  )  
-}
-async function handleSearch() {
+const handleSearch =  async () => {
     if(search) {
-      const exerciseData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/', exerciseOptions);
+      const exerciseData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
 
       console.log(exerciseData)
     }
@@ -37,8 +33,7 @@ async function handleSearch() {
         }}
           height='76px'
           value={search}
-          name={search}
-          onChange={handleChange}
+          onChange={(event) => setSearch(event.target.value.toLowerCase())}
           placeholder="Search Exercises"
           type='text'
         />
