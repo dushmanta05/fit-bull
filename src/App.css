@@ -33,7 +33,7 @@ body {
     transition: 0.3s all ease-in-out;
   }
   
-  .left-arrow {
+  .right-arrow {
     right: 140px;
   }
   
@@ -53,11 +53,10 @@ body {
     height: 742px;
   }
   
-  .hero-banner-img {
+  .banner-img {
     position: absolute;
     right: 40px;
     top: 0px;
-    width: 700px;
     height: 900px;
     margin-top: -330px;
   
