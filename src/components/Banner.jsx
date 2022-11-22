@@ -4,8 +4,8 @@ import BannerImage from '../assets/images/banner.png'
 
 const Banner = () => {
   return (
-    <Box sx={{ 
-      mt: {lg: '212px', xs: '70px'},
+    <Box className='banner-box' sx={{ 
+      mt: {lg: '120px', xs: '70px'},
       ml: {sm: '50px'}}} 
       position="relative" p="20px">
         <Typography color='#FF2625' fontWeight='600' fontSize='26px'>
@@ -21,9 +21,9 @@ const Banner = () => {
         <Button variant='contained' href='#exercises' color='error' sx={{backgroundColor: '#FF2625', padding: '10px'}}>
           Explore Exercises
         </Button>
-        <Typography fontWeight='600' color='#FF2625'
-        sx={{opacity: 0.1,
-        display: {lg: 'block',xs: 'none'}}} fontSize='200px'>
+        <Typography className='banner-exercise-block' fontWeight='600' color='#FF2625'
+        sx={{opacity: 0.2,
+        display: {lg: 'block',xs: 'none'}}} fontSize='150px'>
           Exercise
         </Typography>
         <img src={BannerImage} alt='banner' className='banner-img'/>
