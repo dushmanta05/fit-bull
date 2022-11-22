@@ -46,7 +46,7 @@ const Exercises = ( { exercises, setExercises, bodyPart } ) => {
           <ExerciseCard key={index} exercise={exercise}/>
         ))}
       </Stack>
-      <Stack>
+      <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems="center">
         {exercises.length > exercisesPerPage && (
           <Pagination 
             color='standard'
